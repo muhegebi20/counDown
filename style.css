@@ -1,0 +1,57 @@
+body{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./images/andreas-rasmussen-OUSa9MU4zZc-unsplash.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.topic{
+    /* background-color: rgba(137, 139, 140, 0.51); */
+    color: rgb(16, 195, 214);
+    padding: 15px 25px;
+    border-radius: 15px;
+    line-height: 10px;
+    text-align: center;
+    margin-right: 100px;
+    position: relative;
+    animation: rotate 1.5s infinite;
+}
+.topic{
+    animation-timing-function: ease-in;
+}
+@keyframes rotate {
+    0% { top: 0px; color: rgb(255, 0, 85);}
+    25% {top: 50px; color: yellow;}
+    50% {top: 0px;}
+    100% {top: 50px;}
+}
+.timeContainer{
+    display: flex;
+    flex-direction: row;
+    margin: 30px 100px 0 0;
+    background-color: rgba(220, 220, 220, 0.533);
+    border-radius: 20px;
+    padding: 20px;
+}
+.day, .hour , .minute , .seconds {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5px;
+    text-align: center;
+}
+.day p, .hour p, .minute p, .seconds p{
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0;
+    color: rgb(243, 255, 71);
+}
+.day span, .hour span, .minute span, .seconds span{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: rgb(151, 220, 32);
+}
+
