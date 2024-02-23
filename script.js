@@ -3,7 +3,8 @@ let hour = document.querySelector('.hour').children[0];
 let minute = document.querySelector('.minute').children[0];
 let seconds = document.querySelector('.seconds').children[0];
 
-const newYear = '01 jan 2024';
+const nextYear = new Date().getFullYear() + 1;
+const newYear = `01 jan ${nextYear}`
 
 function countdown(){
     const newYearDate = new Date(newYear);
